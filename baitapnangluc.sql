@@ -77,7 +77,7 @@ INSERT INTO Match_Statistic (MaTranDau, MaTuyenthu, Kills, Deaths, Assists) VALU
 ('M002', 'P003', 4, 3, 7),
 ('MS_007', 'P004', 6, 0, 12),
 ('M004', 'P005', 2, 4, 5);
-
+SET SQL_SAFE_UPDATES = 0;
 UPDATE Player SET MucLuong = MucLuong * 1.20 WHERE ViTriThiDau = 'Jungler';
 
 DELETE FROM Team WHERE ChuSoHuu IS NULL;
